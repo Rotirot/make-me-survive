@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android-config/strings.xml -->
+<!-- Copy to android/app/src/main/res/values/strings.xml -->
+<resources>
+    <string name="app_name">Survival Encyclopedia</string>
+    <string name="title_activity_main">Survival Encyclopedia</string>
+    <string name="package_name">com.makemesurvive.app</string>
+    <string name="custom_url_scheme">com.makemesurvive.app</string>
+</resources>

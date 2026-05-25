@@ -1,0 +1,24 @@
+{
+  "appId": "com.makemesurvive.app",
+  "appName": "Survival Encyclopedia",
+  "webDir": "src",
+  "server": {
+    "androidScheme": "https",
+    "cleartext": false
+  },
+  "android": {
+    "allowMixedContent": false,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": false,
+    "backgroundColor": "#0f1117",
+    "loggingBehavior": "none"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1000,
+      "backgroundColor": "#0f1117",
+      "androidSplashResourceName": "splash",
+      "showSpinner": false
+    }
+  }
+}

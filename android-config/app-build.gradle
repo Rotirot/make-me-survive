@@ -1,0 +1,41 @@
+// android-config/app-build.gradle
+// ─────────────────────────────────────────────────────────────────
+// This file is a TEMPLATE. After running `npx cap add android`,
+// merge these settings into android/app/build.gradle
+// ─────────────────────────────────────────────────────────────────
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 34
+    defaultConfig {
+        applicationId "com.makemesurvive.app"
+        minSdkVersion 23          // Android 6.0+ (covers 98% of devices)
+        targetSdkVersion 34
+        versionCode 1             // Increment on every release
+        versionName "1.0.0"      // Match your git tag
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false   // Set to true once you have tested thoroughly
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // Signing config — add via Android Studio or CI secrets
+        }
+        debug {
+            applicationIdSuffix ".debug"
+            debuggable true
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "androidx.appcompat:appcompat:1.6.1"
+    implementation "androidx.webkit:webkit:1.9.0"   // Modern WebView features
+    implementation project(':capacitor-android')
+}
