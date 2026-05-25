@@ -117,20 +117,28 @@ Uses [MLC LLM](https://mlc.ai) — the model runs directly on the phone.
 ```
 make-me-survive/
 ├── src/
-│   └── index.html          ← The entire encyclopedia (single file)
+│   ├── survival_encyclopedia.html  ← SINGLE SOURCE OF TRUTH — edit this file
+│   └── index.html                  ← Entry point redirect (do not edit)
 ├── android-config/         ← Android config templates
-│   ├── app-build.gradle    ← Merge into android/app/build.gradle
-│   ├── AndroidManifest.xml ← Merge into android manifest
-│   └── strings.xml         ← App name and package strings
+│   ├── app-build.gradle
+│   ├── AndroidManifest.xml
+│   └── strings.xml
 ├── .github/
 │   └── workflows/
 │       └── build-apk.yml   ← Automated APK build on every push
 ├── docs/
-│   └── SETUP.md            ← Detailed setup guide
-├── capacitor.config.json   ← Capacitor/APK configuration
-├── package.json            ← Node dependencies and scripts
+│   └── SETUP.md
+├── tests/
+│   └── encyclopedia.test.js ← Jest test suite (39 tests)
+├── CONTRIBUTORS.md         ← Authorship transparency and review process
+├── capacitor.config.json
+├── package.json
 └── README.md
 ```
+
+> **The only file you need to edit is `src/survival_encyclopedia.html`.**  
+> All articles, styles, diagrams, and logic live in that single file.  
+> Run `npm run sync` after editing to copy changes into the Android project.
 
 ---
 

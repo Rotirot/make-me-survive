@@ -1,6 +1,6 @@
 /**
  * make-me-survive — Test Suite
- * Tests core encyclopedia logic extracted from src/index.html
+ * Tests core encyclopedia logic extracted from src/survival_encyclopedia.html
  *
  * Run: npm test
  */
