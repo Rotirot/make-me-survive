@@ -1,11 +1,13 @@
 {
   "name": "make-me-survive",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Offline survival encyclopedia with AI assistant — works as web app and Android APK",
   "main": "src/index.html",
   "scripts": {
     "start": "npx serve src -p 3000",
     "preview": "npx serve src -p 3000 --open",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
     "sync": "npx cap sync android",
     "open:android": "npx cap open android",
     "build:android:debug": "cd android && ./gradlew assembleDebug",
@@ -14,18 +16,45 @@
     "cap:add:android": "npx cap add android",
     "setup": "npm install && echo 'Done. Run: npm run cap:init, then npm run cap:add:android'"
   },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ],
+    "collectCoverageFrom": [
+      "tests/**/*.js"
+    ],
+    "coverageReporters": [
+      "text",
+      "lcov"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "functions": 80,
+        "lines": 80
+      }
+    }
+  },
   "dependencies": {
     "@capacitor/android": "^6.0.0",
     "@capacitor/core": "^6.0.0"
   },
   "devDependencies": {
     "@capacitor/cli": "^6.0.0",
+    "jest": "^29.7.0",
     "serve": "^14.2.0"
   },
-  "keywords": ["survival", "offline", "encyclopedia", "android", "capacitor"],
-  "license": "MIT",
+  "keywords": [
+    "survival",
+    "offline",
+    "encyclopedia",
+    "android",
+    "capacitor",
+    "first-aid"
+  ],
+  "license": "CC-BY-NC-SA-4.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/make-me-survive.git"
+    "url": "https://github.com/Rotirot/make-me-survive.git"
   }
 }

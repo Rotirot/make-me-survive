@@ -176,4 +176,20 @@ Click the **"🖨 Print All as PDF"** button in the app. The browser's print dia
 
 ## 📄 License
 
-MIT — use freely, modify, distribute. Keep a copy offline. Stay safe.
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International**
+
+You are free to:
+- **Share** — copy and redistribute in any medium or format
+- **Adapt** — remix, transform, and build upon the material
+
+Under the following terms:
+- **Attribution** — You must give appropriate credit and link to this repository
+- **NonCommercial** — You may **not** use this for commercial purposes or sell it
+- **ShareAlike** — If you remix or adapt it, you must distribute under the same license
+
+This means: free forever for personal use, communities, and non-profit organisations.  
+Nobody can sell it, paywall it, or close-source a modified version.
+
+© 2026 [Rotirot](https://github.com/Rotirot) — Keep a copy offline. Stay safe.
